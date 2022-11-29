@@ -27,7 +27,7 @@ def time_conversion(orbit_dat, nheadings):
 	import wget
 	import os
 	orbit_data = csv2array(orbit_dat, nheadings)
-  # Get time in MJD
+  	# Get time in MJD
 	JD = orbit_data[:,0]
 	MJD = JD - 2400000.5
 	MJD_floored = np.floor(MJD)
